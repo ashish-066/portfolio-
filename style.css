@@ -858,7 +858,7 @@ html {
   }
 
   .skillsmenu {
-    flex-direction: column;
+    width:auto;
     height: auto;
   }
 
@@ -879,7 +879,6 @@ html {
   flex-direction: row;
   align-items: flex-start;
   gap: 20px;
-  background: white;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 15px;
@@ -906,7 +905,6 @@ html {
   }
 }
 .skillsmenu {
-  background: white;
   padding: 30px;
   display: flex;
   flex-wrap: wrap;

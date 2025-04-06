@@ -846,3 +846,29 @@ html {
     margin-bottom: 10px;
   }
 }
+@media (max-width: 768px) {
+  .name {
+    font-size: 70px;
+  }
+
+  .box1 {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .skillsmenu {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .part1, .part2 {
+    flex-direction: column;
+  }
+
+  .projectmenu .menu-item {
+    flex-direction: column;
+    height: auto;
+  }
+}
+

@@ -1,36 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Glow Effect</title>
-  <style>
-    body {
-      background-color: #000; /* dark background to show glow clearly */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-
-    .menu-item {
-      width: 200px;
-      height: 200px;
-      border-radius: 20px;
-      background-color: #1e1e1e;
-      box-shadow: 0 0 20px rgba(0, 255, 0, 0.7); /* Green glow before hover */
-      transition: box-shadow 0.3s ease, transform 0.3s, background-color 0.3s;
-    }
-
-    .menu-item:hover {
-      background-color: #4a3cb5;
-      transform: translateY(-5px);
-      box-shadow: 0 0 25px rgba(255, 255, 255, 0.9); /* White glow on hover */
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <link href="style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
 
-  <div class="menu-item"></div>
+<body class="content">
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">MySite</div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="hamburger">&#9776;</label>
+    <ul class="nav-links">
+      <li><a href="#name">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
+  <header>
+    <h1 class="name" id="name">
+      <div class="name1" style="box-shadow: gold;">KARANAM</div>
+      <div class="name2">ASHISH VARDHAN</div>
+    </h1>
+
+    <div class="box1" id="about" style="margin-top: 20px;">
+        <div class="box2">
+          <h2>I am a student developer</h2>
+          <p>I am very passionate about the word innovation and technology.<br>
+            I like to code with music or watch anime when I feel alone.<br>
+            I want to explore all the domains of computer science—AI, cyber security, cloud computing, IoT and many more.
+          </p>
+        </div>
+        <img class="img1" style="margin-top: 60px;" src="WhatsApp Image 2025-02-24 at 02.01.30_9664854e.jpg" alt="Profile Picture">
+      </div>
+      <h1 style="text-align: center;">24/7 available</h1>
+
+      <div class="social">
+        <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/_ashish_karanam_" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:yourname@example.com"><i class="fas fa-envelope"></i></a> <!-- New Email Icon -->
+
+      </div>
+      
+  </header>
+
+  <div class="main">
+    <div class="section-title">
+      <h1>Education</h1>
+    </div>
+
+    <div class="timeline" id="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">2024 - Present</div>
+        <div class="timeline-content">
+          <h3>AMRITA VISHWA VIDYAPEETHAM, AMRITAPURI</h3>
+          <p class="degree">Bachelor's Degree, Computer Science and Engineering</p>
+          <p>Student in Computer Science.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2022- 2024</div>
+        <div class="timeline-content">
+          <h3>SRI CHAITANYA COLLEGE</h3>
+          <p class="degree">Intermediate Education, CBSE Board</p>
+          <p>Opted Maths, Physics, and Chemistry.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">2012 - 2022</div>
+        <div class="timeline-content">
+          <h3>SRI CHAITANYA TECHNO SCHOOL</h3>
+          <p class="degree">Secondary and Higher Secondary Education, ICSE</p>
+          <p>AP STATE board.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="skillsmenu" id="skills" style="margin-top: 100px;">
+    <div class="a"><h1>My</h1></div>
+    <div class="b">
+      <div class="part1">
+        <div class="menu-item1"><img class="python1" src="python.jpg" alt="Python"></div>
+        <div class="menu-item1"><img class="python1" src="java.jpg" alt="Java"></div>
+        <div class="menu-item1"><img class="python1" src="c.jpeg" alt="C"></div>
+      </div>
+      <div class="part2">
+        <div class="menu-item1"><img class="python1" src="html.jpg" alt="HTML"></div>
+        <div class="menu-item1"><img class="python1" src="css.jpg" alt="CSS"></div>
+      </div>
+    </div>
+    <div class="c"><h1>Ski<br>lls</h1></div>
+  </div>
+
+  <!-- Projects -->
+  <div class="projectmenu" id="projects" style="margin-top: 80px;">
+    <h1 style="font-size: 70px;">Projects</h1>
+    <div class="menu-item">
+        <div><img class="project1" src="Screenshot 2025-03-05 204623.png" alt="Project Screenshot"></div>
+        <div>
+          <h1>Exam paper helper</h1>
+          <p>
+            This website serves as a digital repository for university question papers, organized by department, subject, and semester. It allows students to easily browse, search, and download past exam papers for academic reference. All papers are stored in a centralized database, ensuring quick access and reliable organization, helping students prepare more effectively for exams.
+          </p>
+          <div class="project-links">
+              <a href="https://github.com/your-repo" target="_blank">GitHub</a>
+              <a href="https://your-live-demo.com" target="_blank">Live Demo</a>
+            </div>  </div>
+</div>
+    <div class="menu-item">
+      <div><img class="project1" src="Screenshot 2025-03-05 204623.png" alt="Project Screenshot"></div>
+      <div>
+        <h1>Nageria Floweri</h1>
+        <p>
+          It is a website that shares the knowledge of a deadly virus brain-eating amoeba such as its history, symptoms,
+          how it affects us, what precautions are needed, and more. It also takes user info like phone number and name,
+          which are later used to send updates.
+        </p>
+        <div class="project-links">
+            <a href="https://github.com/your-repo" target="_blank">GitHub</a>
+            <a href="https://your-live-demo.com" target="_blank">Live Demo</a>
+          </div>
+      </div>
+    </div>
+    <div class="menu-item">
+        <div><img class="project1" src="Screenshot 2025-03-05 204623.png" alt="Project Screenshot"></div>
+        <div>
+          <h1>Attendance Tracker</h1>
+          <p>
+            Attendance Tracker is a simple and efficient web-based tool designed to help teachers, students, or teams record and monitor attendance with ease. Users can add names, mark presence or absence, and view attendance records over time. It features a clean interface, real-time status updates, and stores data either temporarily or with persistent local storage (          
+
+          </p>
+          <div class="project-links">
+              <a href="https://github.com/your-repo" target="_blank">GitHub</a>
+              <a href="https://your-live-demo.com" target="_blank">Live Demo</a>
+            </div>  </div>
+</div>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h1 style="text-align: center;">Contact Me!</h1>
+    <div class="contact-container">
+      <div class="contact-left">
+        <h3>Talk to me</h3>
+
+        <div class="contact-card">
+          <i class="fas fa-envelope"></i>
+          <h4>Email</h4>
+          <p>ashish672912@gmail.com</p>
+          <a href="mailto:ashish672912@gmail.com">Write me →</a>
+        </div>
+
+        <div class="contact-card">
+          <i class="fab fa-whatsapp"></i>
+          <h4>Whatsapp</h4>
+          <p>********58</p>
+          <a href="#">Write me →</a>
+        </div>
+
+        <div class="contact-card">
+          <i class="fab fa-instagram"></i>
+          <h4>Instagram</h4>
+          <p>_ashish_karanam_</p>
+          <a href="https://www.instagram.com/_ashish_karanam_/">Write me →</a>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <h3>Contact me</h3>
+        <form>
+          <input type="text" placeholder="Insert your name" />
+          <input type="email" placeholder="Insert your Email" />
+          <textarea placeholder="Write your Project"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="social">
+      <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/_ashish_karanam_" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Karanam Ashish Vardhan. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const skillSections = document.querySelectorAll(".skillsmenu");
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          const menuItems = entry.target.querySelectorAll(".menu-item1");
+          const aElement = entry.target.querySelector(".a");
+          const cElement = entry.target.querySelector(".c");
+
+          if (entry.isIntersecting) {
+            menuItems.forEach((item) => {
+              item.classList.remove("animate");
+              void item.offsetWidth;
+              item.classList.add("animate");
+            });
+
+            if (aElement) {
+              aElement.classList.remove("slide-in-left");
+              void aElement.offsetWidth;
+              aElement.classList.add("slide-in-left");
+            }
+
+            if (cElement) {
+              cElement.classList.remove("slide-in-right");
+              void cElement.offsetWidth;
+              cElement.classList.add("slide-in-right");
+            }
+          } else {
+            menuItems.forEach((item) => item.classList.remove("animate"));
+            if (aElement) aElement.classList.remove("slide-in-left");
+            if (cElement) cElement.classList.remove("slide-in-right");
+          }
+        });
+      }, { threshold: 0.5 });
+
+      skillSections.forEach((section) => observer.observe(section));
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll("#about, #education, #skills"); // All sections
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      const section = entry.target;
+      const menuItems = section.querySelectorAll(".menu-item1");
+
+      // Check if the section is in view
+      if (entry.isIntersecting) {
+        menuItems.forEach((item) => {
+          item.classList.remove("animate");
+          void item.offsetWidth; // trigger reflow to restart animation
+          item.classList.add("animate");
+        });
+      } else {
+        menuItems.forEach((item) => item.classList.remove("animate"));
+      }
+    });
+  }, { threshold: 0.5 });
+
+  // Observe all three sections
+  sections.forEach((section) => observer.observe(section));
+});
+
+  </script>
 </body>
 </html>

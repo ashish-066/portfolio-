@@ -21,4 +21,6 @@ a total mess finally by using a small amount of javascript i was able to out com
 This sections showcases the projects i done till now and the projects i have worked in as a team mate.these projects also showcases my interest in innovation  and my hands on experince
 ## contact
 As you can see the contact section is simply laid and formated not making any complex moves just by using flex box and forms to take input
-##i think this is a beginning to my web developer journey
+## footer
+An happy ending was given to the portfolio by setting a footer to it.
+## I think this is a beginning to my web developer journey
